@@ -7,7 +7,6 @@ import { useTheme } from "next-themes"
 import Header from "../components/Header";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme()
 
   const skills = [
     { name: "React", icon: <Code2 className="w-6 h-6" />, level: "Avançado" },
