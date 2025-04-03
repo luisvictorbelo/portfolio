@@ -23,18 +23,24 @@ const Hero = () => {
                         Desenvolvedor Full-Stack
                     </h2>
                     <div className="flex gap-4">
-                        <Button className="text-white">
-                            <Mail className="mr-2 h-4 w-4" />
-                            Contato
-                        </Button>
-                        <Button variant="outline">
-                            <Github className="mr-2 h-4 w-4" />
-                            GitHub
-                        </Button>
-                        <Button variant="outline">
-                            <Linkedin className="mr-2 h-4 w-4" />
-                            LinkedIn
-                        </Button>
+                        <a href="#contato">
+                            <Button className="text-white">
+                                <Mail className="mr-2 h-4 w-4" />
+                                Contato
+                            </Button>
+                        </a>
+                        <a href="https://github.com/luisvictorbelo" target="_blank">
+                            <Button variant="outline">
+                                <Github className="mr-2 h-4 w-4" />
+                                GitHub
+                            </Button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luisvictorbelo/" target="_blank">
+                            <Button variant="outline">
+                                <Linkedin className="mr-2 h-4 w-4" />
+                                LinkedIn
+                            </Button>
+                        </a>
                     </div>
                 </div>
                 <div className="md:w-1/2 flex justify-center mt-8 md:mt-0 animate-fade-in" style={{ animationDelay: "0.6s" }}>
