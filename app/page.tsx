@@ -7,6 +7,7 @@ import { useTheme } from "next-themes"
 import Header from "../components/Header";
 import Hero from "@/components/Hero"
 import About from "@/components/About"
+import Projects from "@/components/Projects"
 
 export default function Home() {
 
@@ -55,24 +56,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-16 animate-slide-in stagger-delay-2">
-          <h2 className="text-3xl font-bold mb-8">Projetos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <Card key={project.title} className="overflow-hidden hover:border-primary transition-colors">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <Projects />
 
         <footer className="border-t">
           <div className="container mx-auto px-4 py-8">
