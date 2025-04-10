@@ -6,6 +6,7 @@ import { Github, Linkedin, Mail, Moon, Sun, Code2, Rocket, Brain } from "lucide-
 import { useTheme } from "next-themes"
 import Header from "../components/Header";
 import Hero from "@/components/Hero"
+import About from "@/components/About"
 
 export default function Home() {
 
@@ -38,6 +39,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <About />
         <section className="container mx-auto px-4 py-16 animate-slide-in stagger-delay-1">
           <h2 className="text-3xl font-bold mb-8">Habilidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -6,7 +6,7 @@ import myPhoto from "@/public/eu.jpg";
 
 const Hero = () => {
     return (
-        <section id="#home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-white to-purple-50 dark:from-purple-900 dark:to-purple-800/20 pt-16">
+        <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-white to-purple-50 dark:from-purple-900 dark:to-purple-800/20 pt-16">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-64 h-64 bg-purple-200 dark:bg-purple-700/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
                 <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-300 dark:bg-purple-600/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
@@ -56,7 +56,7 @@ const Hero = () => {
                 </div>
                 <a
                     href="#about"
-                    className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-light"
+                    className="hidden md:block md:absolute md:bottom-10 md:left-1/2 md:transform md:-translate-x-1/2 md:animate-bounce-light"
                 >
                     <ArrowDown className="w-10 h-10 p-2 rounded-full bg-purple-100 dark:bg-purple-800/50 text-purple-600 dark:text-purple-300" />
                 </a>
