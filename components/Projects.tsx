@@ -4,8 +4,6 @@ import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import EMEImage from "@/public/cropped-eme-1.png";
 
-
-
 const Projects = () => {
     const [filter, setFilter] = useState("all");
 
@@ -19,6 +17,9 @@ const Projects = () => {
         { value: "nextjs", label: "Next.js" },
         { value: "tailwindcss", label: "Tailwind CSS" },
         { value: "typescript", label: "TypeScript" },
+        { value: "dotnet", label: ".NET" },
+        { value: "sqlserver", label: "SQL Server" },
+        { value: "vite", label: "Vite" },
     ];
 
     const projects = [
@@ -44,20 +45,40 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: "Portfólio",
-            description: "Aqui você conhece um pouco mais sobre o meu trabalho!",
-            image: "https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            techs: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-            demo: "#",
+            title: "API de Gerenciamento de Finanças",
+            description: "API RESTful de Gerenciamento de Finanças utilizando .NET, SQL Server e autenticação JWT Bearer",
+            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZpbmFuJUMzJUE3YXN8ZW58MHx8MHx8fDA%3D",
+            techs: [".NET", "SQL Server"],
+            demo: "",
+            github: "https://github.com/luisvictorbelo/FinancialManagementAPI",
+            category: ["dotnet", "sqlserver"]
+        },
+        {
+            id: 4,
+            title: "NEXUS AI",
+            description: "Landing page da empresa de IA Nexus AI",
+            image: "https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJhaW58ZW58MHx8MHx8fDA%3D",
+            techs: ["React", "Tailwind CSS", "Vite"],
+            demo: "https://nexus-ai-zeta.vercel.app/",
+            github: "https://github.com/luisvictorbelo/nexus-ai",
+            category: ["react", "tailwindcss", "vite"]
+        },
+        {
+            id: 5,
+            title: "Meu Portfólio",
+            description: "Site do meu portfólio totalmente responsivo com tema claro/escuro",
+            image: "https://images.unsplash.com/photo-1545665277-5937489579f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvfGVufDB8fDB8fHww",
+            techs: ["React", "Tailwind CSS", "Next.js", "TypeScript"],
+            demo: "#home",
             github: "https://github.com/luisvictorbelo/portfolio",
-            category: ["react", "nextjs", "tailwindcss", "typescript"]
+            category: ["react", "tailwindcss", "nextjs", "typescript"]
         }
     ]
 
     const filteredProjects = filter === "all"
         ? projects
         : projects.filter((project) => project.category.includes(filter))
-    
+
     return (
         <AnimatedSection id="projects" className="bg-purple-50 dark:bg-purple-900/10">
             <div className="container mx-auto px-4">
@@ -69,8 +90,8 @@ const Projects = () => {
                             variant={filter === item.value ? "default" : "outline"}
                             className={
                                 filter === item.value
-                                ? "bg-purple-gradient text-white"
-                                : "border-purple-200 dark:border-purple-700/20 hover:border-purple-400"
+                                    ? "bg-purple-gradient text-white"
+                                    : "border-purple-200 dark:border-purple-700/20 hover:border-purple-400"
                             }
                             onClick={() => setFilter(item.value)}
                         >
@@ -103,20 +124,23 @@ const Projects = () => {
                                     ))}
                                 </div>
                                 <div className="flex justify-between">
-                                    <a 
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center text-sm font-medium text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300"
-                                    >
-                                        Link <ExternalLink className="ml-1 w-4 h-4" />
-                                    </a>
-                                    {project.github.length > 0 
-                                        ? <a 
+                                    {project.demo.length > 0
+                                        ? <a
+                                            href={project.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center text-sm font-medium text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300"
+                                        >
+                                            Link <ExternalLink className="ml-1 w-4 h-4" />
+                                        </a>
+                                        : null
+                                    }
+                                    {project.github.length > 0
+                                        ? <a
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center text-sm font-medium text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300"   
+                                            className="inline-flex items-center text-sm font-medium text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300"
                                         >
                                             Repositório <Github className="ml-1 w-4 h-4" />
                                         </a>
