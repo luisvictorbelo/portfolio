@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Hero from "@/components/Hero"
 import About from "@/components/About"
 import Projects from "@/components/Projects"
+import Footer from "@/components/Footer"
 
 export default function Home() {
 
@@ -55,16 +56,8 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         <Projects />
-
-        <footer className="border-t">
-          <div className="container mx-auto px-4 py-8">
-            <p className="text-center text-muted-foreground">
-              © {new Date().getFullYear()} Seu Nome. Todos os direitos reservados.
-            </p>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   )
