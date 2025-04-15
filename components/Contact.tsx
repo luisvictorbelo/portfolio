@@ -5,7 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
-import { POST } from "@/app/api/send/route";
+
 
 
 interface FormData {
@@ -63,23 +63,26 @@ const Contact = () => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
-        })
+        }).then((res) => res.status === 200 ? toast({
+            title: "Mensagem enviada!",
+            description: "Obrigado por entrar em contato.",
+            variant: "default",
+            duration: 5000
+        }) : toast({
+            title: "Erro!",
+            description: "Houve um erro ao enviar sua mensagem. Tente novamente!",
+            variant: "default",
+            duration: 5000
+        }))
 
-        // Simulação de envio
-        setTimeout(() => {
-            toast({
-                title: "Mensagem enviada!",
-                description: "Obrigado por entrar em contato.",
-                variant: "default",
-            });
-            setFormData({
-                name: "",
-                email: "",
-                subject: "",
-                message: ""
-            });
-            setLoading(false);
-        }, 1500);
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+
+        setLoading(false);
     };
 
     return (
