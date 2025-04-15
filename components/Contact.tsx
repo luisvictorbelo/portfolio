@@ -7,6 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 
 
+
 interface FormData {
     name: string;
     email: string;
@@ -56,25 +57,32 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setLoading(true);
+        await fetch('/api/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        }).then((res) => res.status === 200 ? toast({
+            title: "Mensagem enviada!",
+            description: "Obrigado por entrar em contato.",
+            variant: "default",
+            duration: 5000
+        }) : toast({
+            title: "Erro!",
+            description: "Houve um erro ao enviar sua mensagem. Tente novamente!",
+            variant: "default",
+            duration: 5000
+        }))
 
-        // Simulação de envio
-        setTimeout(() => {
-            toast({
-                title: "Mensagem enviada!",
-                description: "Obrigado por entrar em contato.",
-                variant: "default",
-            });
-            setFormData({
-                name: "",
-                email: "",
-                subject: "",
-                message: ""
-            });
-            setLoading(false);
-        }, 1500);
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+
+        setLoading(false);
     };
 
     return (
