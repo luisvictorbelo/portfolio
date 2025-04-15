@@ -5,6 +5,7 @@ import AnimatedSection from "./AnimatedSection";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { POST } from "@/app/api/send/route";
 
 
 interface FormData {
@@ -56,9 +57,13 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setLoading(true);
+        await fetch('/api/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        })
 
         // Simulação de envio
         setTimeout(() => {
