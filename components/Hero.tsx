@@ -23,7 +23,7 @@ const Hero = () => {
                         Desenvolvedor Full-Stack
                     </h2>
                     <div className="flex gap-4">
-                        <a href="#contato">
+                        <a href="#contact">
                             <Button className="text-white">
                                 <Mail className="mr-2 h-4 w-4" />
                                 Contato
