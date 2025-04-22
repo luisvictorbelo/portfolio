@@ -59,6 +59,7 @@ const Contact = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setLoading(true);
         await fetch('/api/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -158,7 +159,9 @@ const Contact = () => {
                                 className="bg-purple-gradient hover:opacity-90 text-white w-full sm:w-auto px-8"
                             >
                                 {loading ? (
-                                    "Enviando..."
+                                    <>
+                                        Enviando...
+                                    </>
                                 ) : (
                                     <>
                                         Enviar Mensagem <Send className="ml-2 w-4 h-4" />
