@@ -10,6 +10,7 @@ import About from "@/components/About"
 import Projects from "@/components/Projects"
 import Footer from "@/components/Footer"
 import Contact from "@/components/Contact"
+import SkillsSection from "@/components/SkillsSection"
 
 export default function Home() {
 
@@ -43,20 +44,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <section className="container mx-auto px-4 py-16 animate-slide-in stagger-delay-1">
-          <h2 className="text-3xl font-bold mb-8">Habilidades</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {skills.map((skill, index) => (
-              <Card key={skill.name} className="p-6 hover:border-primary transition-colors">
-                <div className="flex items-center gap-4 mb-4">
-                  {skill.icon}
-                  <h3 className="text-xl font-semibold">{skill.name}</h3>
-                </div>
-                <p className="text-muted-foreground">{skill.level}</p>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <SkillsSection />
         <Projects />
         <Contact />
       </main>

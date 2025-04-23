@@ -53,20 +53,6 @@ const About = () => {
                             me tornar um desenvolvedor completo, capaz de criar aplicações de
                             ponta a ponta com excelência técnica.
                         </p>
-
-                        <div className="flex flex-wrap gap-3 pt-4">
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">React</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">TypeScript</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Next.js</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Tailwind CSS</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Node.js</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">.NET</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">PHP</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">MongoDB</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">MySQL</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">SQL Server</span>
-                            <span className="px-4 py-2 bg-purple-100 dark:bg-purple-800/30 text-purple-700 dark:text-purple-300 rounded-full text-sm">Git</span>
-                        </div>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
