@@ -199,13 +199,15 @@ const Contact = () => {
                             </h4>
                             <div className="flex space-x-4">
                                 <a
-                                    href="#"
+                                    href="https://github.com/luisvictorbelo"
+                                    target="_blank"
                                     className="w-10 h-10 bg-purple-100 dark:bg-purple-700/20 rounded-full flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-600/20 transition-colors"
                                 >
                                     <Github />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://www.linkedin.com/in/luisvictorbelo/"
+                                    target="_blank"
                                     className="w-10 h-10 bg-purple-100 dark:bg-purple-700/20 rounded-full flex items-center justify-center text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-600/20 transition-colors"
                                 >
                                     <Linkedin />
