@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileUser } from "lucide-react";
 import { Button } from "./ui/button";
 import myPhoto from "@/public/eu.jpg";
 
@@ -39,6 +39,12 @@ const Hero = () => {
                             <Button variant="outline">
                                 <Linkedin className="mr-2 h-4 w-4" />
                                 LinkedIn
+                            </Button>
+                        </a>
+                        <a href="/curriculo-luis-victor-belo-dev-full-stack.pdf" target="_blank">
+                            <Button variant="outline">
+                                <FileUser className="mr-2 h-4 w-4" />
+                                Baixar CV
                             </Button>
                         </a>
                     </div>
