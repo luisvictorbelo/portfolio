@@ -57,24 +57,78 @@ const Contact = () => {
         }));
     };
 
+    const validateForm = () => {
+        if (!formData.name.trim()) {
+            toast({
+                title: "Erro!",
+                description: "O campo nome é obrigatório.",
+                variant: "default",
+                duration: 5000
+            });
+
+            return false;
+        }
+
+        if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) {
+            toast({
+                title: "Erro!",
+                description: "Por favor, insira um email válido.",
+                variant: "default",
+                duration: 5000
+            });
+
+            return false;
+        }
+
+        if (!formData.subject.trim()) {
+            toast({
+                title: "Erro!",
+                description: "O campo 'Assunto' é obrigatório.",
+                variant: "default",
+                duration: 5000
+            });
+
+            return false;
+        }
+
+        if (!formData.message.trim() || formData.message.length < 10) {
+            toast({
+                title: "Erro!",
+                description: "A mensagem deve ter pelo menos 10 caracteres.",
+                variant: "default",
+                duration: 5000
+            });
+
+            return false;
+        }
+
+        return true;
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!validateForm()) return;
+
         setLoading(true);
+
         await fetch('/api/send', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
-        }).then((res) => res.status === 200 ? toast({
-            title: "Mensagem enviada!",
-            description: "Obrigado por entrar em contato.",
-            variant: "default",
-            duration: 5000
-        }) : toast({
-            title: "Erro!",
-            description: "Houve um erro ao enviar sua mensagem. Tente novamente!",
-            variant: "default",
-            duration: 5000
-        }))
+        }).then((res) => res.status === 200 ?
+            toast({
+                title: "Mensagem enviada!",
+                description: "Obrigado por entrar em contato.",
+                variant: "default",
+                duration: 5000
+            }) :
+            toast({
+                title: "Erro!",
+                description: "Houve um erro ao enviar sua mensagem. Tente novamente!",
+                variant: "default",
+                duration: 5000
+            }));
 
         setFormData({
             name: "",
