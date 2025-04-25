@@ -5,8 +5,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 ## 🛠️ Tecnologias Utilizadas
 
 - **Front-end**: React, Next.js, TypeScript, Tailwind CSS
-- **Back-end**: Node.js, .NET, PHP
-- **Banco de Dados**: SQL (MySQL, SQL Server), NoSQL (MongoDB)
+- **Back-end**: Node.js
 - **Outras Ferramentas**: Resend (para envio de e-mails)
 
 ## 📂 Estrutura do Projeto
@@ -96,7 +95,7 @@ public/
 
 ## 🌟 Demonstração
 
-Você pode acessar a versão online do portfólio [aqui](https://seu-portfolio-url.com).
+Você pode acessar a versão online do portfólio [aqui](https://portfolio-phi-fawn-54.vercel.app/).
 
 ## 📧 Contato
 
