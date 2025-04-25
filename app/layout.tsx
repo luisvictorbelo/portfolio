@@ -7,7 +7,7 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Desenvolvedor Frontend',
+  title: 'Portfolio - Luís Victor Belo - Dev Fullstack',
   description: 'Portfolio pessoal mostrando minhas habilidades e projetos em desenvolvimento web',
 };
 
