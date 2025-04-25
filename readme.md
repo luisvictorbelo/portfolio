@@ -13,8 +13,24 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 A estrutura do projeto é organizada da seguinte forma:
 
-.env.local .eslintrc.json .gitignore components.json next-env.d.ts next.config.js package.json postcss.config.js tailwind.config.ts tsconfig.json .next/ app/ components/ hooks/ lib/ public/
-
+```
+.env.local
+.eslintrc.json
+.gitignore
+components.json
+next-env.d.ts
+next.config.js
+package.json
+postcss.config.js
+tailwind.config.ts
+tsconfig.json
+.next/
+app/
+components/
+hooks/
+lib/
+public/
+```
 
 ### Principais Diretórios
 
@@ -59,28 +75,37 @@ A estrutura do projeto é organizada da seguinte forma:
    ```bash
    git clone https://github.com/luisvictorbelo/portfolio.git
    cd portfolio
+   ```
 
-2. Instale as dependências
-    ```bash
-    npm install
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-3. Configure as variáveis de ambiente no arquivo .env.local:
-    ```bash
-    RESEND_API_KEY=your-resend-api-key
+3. Configure as variáveis de ambiente no arquivo `.env.local`:
+   ```
+   RESEND_API_KEY=your_resend_api_key
+   ```
 
-4. Inicie o servidor de desenvolvimento
-    ```bash
-    npm run dev
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-5. Acesse o projeto em http://localhost:3000.
+5. Acesse o projeto em [http://localhost:3000](http://localhost:3000).
 
 ## 🌟 Demonstração
-- Você pode acessar a versão online do portfólio aqui.
+
+Você pode acessar a versão online do portfólio [aqui](https://seu-portfolio-url.com).
 
 ## 📧 Contato
-- E-mail: luis.belo@outlook.com.br
-- GitHub: luisvictorbelo
-- LinkedIn: linkedin.com/in/luisvictorbelo
 
-``` Desenvolvido com 💜 por Luís Victor Belo. ```
+- **E-mail**: luis.belo@outlook.com.br
+- **GitHub**: [luisvictorbelo](https://github.com/luisvictorbelo)
+- **LinkedIn**: [linkedin.com/in/luisvictorbelo](https://linkedin.com/in/luisvictorbelo)
+
+---
+
+Desenvolvido com 💜 por Luís Victor Belo.
+```.
 
