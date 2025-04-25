@@ -74,12 +74,13 @@ A estrutura do projeto é organizada da seguinte forma:
 
 5. Acesse o projeto em http://localhost:3000.
 
-🌟 Demonstração
-Você pode acessar a versão online do portfólio aqui.
+## 🌟 Demonstração
+- Você pode acessar a versão online do portfólio aqui.
 
-📧 Contato
-E-mail: luis.belo@outlook.com.br
-GitHub: luisvictorbelo
-LinkedIn: linkedin.com/in/luisvictorbelo
-Desenvolvido com 💜 por Luís Victor Belo. ```
+## 📧 Contato
+- E-mail: luis.belo@outlook.com.br
+- GitHub: luisvictorbelo
+- LinkedIn: linkedin.com/in/luisvictorbelo
+
+``` Desenvolvido com 💜 por Luís Victor Belo. ```
 
