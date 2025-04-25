@@ -106,5 +106,5 @@ Você pode acessar a versão online do portfólio [aqui](https://portfolio-phi-f
 ---
 
 Desenvolvido com 💜 por Luís Victor Belo.
-```.
+
 
