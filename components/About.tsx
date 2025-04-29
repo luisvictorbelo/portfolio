@@ -40,7 +40,7 @@ const About = () => {
                             Olá! Sou um desenvolvedor full-stack apaixonado por criar soluções
                             web inovadoras e funcionais. Atualmente sou estagiário no Instituto Maranhense de Estudos Socioeconômicos e Cartográficos e estou
                             aprimorando minhas habilidades em diversas tecnologias e buscando
-                            minha primeira oportunidade como desenvolvedor júnior.
+                            novas oportunidades.
                         </p>
                         <p className="text-lg text-foreground">
                             Minha jornada na programação começou na faculdade de Engenharia da Computação e tem sido um caminho de constante aprendizado e
