@@ -22,13 +22,7 @@ const Hero = () => {
                     <h2 className="text-2xl md:text-3xl font-medium mb-6 text-foreground animate-fade-in" style={{ animationDelay: "0.3s" }}>
                         Desenvolvedor Full-Stack
                     </h2>
-                    <div className="flex gap-4">
-                        <a href="#contact">
-                            <Button className="text-white">
-                                <Mail className="mr-2 h-4 w-4" />
-                                Contato
-                            </Button>
-                        </a>
+                    <div className="grid grid-cols-1 gap-3 md:grid-cols-3 lg:flex lg:gap-4">
                         <a href="https://github.com/luisvictorbelo" target="_blank">
                             <Button variant="outline">
                                 <Github className="mr-2 h-4 w-4" />
@@ -45,6 +39,12 @@ const Hero = () => {
                             <Button variant="outline">
                                 <FileUser className="mr-2 h-4 w-4" />
                                 Baixar CV
+                            </Button>
+                        </a>
+                        <a href="#contact">
+                            <Button className="text-white">
+                                <Mail className="mr-2 h-4 w-4" />
+                                Contato
                             </Button>
                         </a>
                     </div>
