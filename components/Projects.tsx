@@ -3,6 +3,7 @@ import AnimatedSection from "./AnimatedSection";
 import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import EMEImage from "@/public/cropped-eme-1.png";
+import IMESCImage from "@/public/imesc-portal.png";
 
 const Projects = () => {
     const [filter, setFilter] = useState("all");
@@ -20,6 +21,7 @@ const Projects = () => {
         { value: "dotnet", label: ".NET" },
         { value: "sqlserver", label: "SQL Server" },
         { value: "vite", label: "Vite" },
+        { value: "php", label: "PHP" }
     ];
 
     const projects = [
@@ -28,20 +30,20 @@ const Projects = () => {
             title: "IV EME - Encontro Maranhense de Economia",
             description: "Landing page do Encontro Maranhense de Economia organizado pela UFMA que mostra informações do evento: inscrição, temas, datas, calendário, etc.",
             image: EMEImage.src,
-            techs: ["HTML", "CSS", "JavaScript", "Wordpress"],
+            techs: ["HTML", "CSS", "JavaScript", "Wordpress", "PHP"],
             demo: "https://www.eme.ufma.br/",
             github: "",
-            category: ["html", "css", "javascript", "wordpress"]
+            category: ["html", "css", "javascript", "wordpress", "php"]
         },
         {
             id: 2,
             title: "ZEE-MA",
             description: "Site do Zoneamento Ecológico do Maranhão que mostra notícias, publicações e documentos importantes da atividade governamental.",
             image: "https://images.unsplash.com/photo-1603060631628-946835734b51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVjb2xvZ2lhfGVufDB8fDB8fHww",
-            techs: ["HTML", "CSS", "JavaScript", "Wordpress"],
+            techs: ["HTML", "CSS", "JavaScript", "Wordpress", "PHP"],
             demo: "http://zee.ma.gov.br/",
             github: "",
-            category: ["html", "css", "javascript", "wordpress"]
+            category: ["html", "css", "javascript", "wordpress", "php"]
         },
         {
             id: 3,
@@ -72,6 +74,16 @@ const Projects = () => {
             demo: "#home",
             github: "https://github.com/luisvictorbelo/portfolio",
             category: ["react", "tailwindcss", "nextjs", "typescript"]
+        },
+        {
+            id: 6,
+            title: "Portal IMESC",
+            description: "Portal de publicações, notícias e outros conteúdos do Instituto Maranhense de Estudos Socioeconômicos e Cartográficos",
+            image: IMESCImage.src,
+            techs: ["HTML", "CSS", "JavaScript", "Wordpress", "PHP"],
+            demo: "https://imesc.ma.gov.br/",
+            github: "",
+            category: ["html", "css", "javascript", "wordpress", "php"]
         }
     ]
 
@@ -106,6 +118,7 @@ const Projects = () => {
                             className="bg-white dark:bg-purple-800/10 rounded-xl overflow-hidden shadow-md border border-purple-100 dark:border-purple-700/20 card-hover"
                         >
                             <div className="h-48 overflow-hidden">
+                                {/* {project.image.startsWith} */}
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform hover:scale-105" />
                             </div>
                             <div className="p-6">
