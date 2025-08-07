@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import EMEImage from "@/public/cropped-eme-1.png";
 import IMESCImage from "@/public/imesc-portal.png";
+import { title } from "node:process";
 
 const Projects = () => {
     const [filter, setFilter] = useState("all");
@@ -21,7 +22,10 @@ const Projects = () => {
         { value: "dotnet", label: ".NET" },
         { value: "sqlserver", label: "SQL Server" },
         { value: "vite", label: "Vite" },
-        { value: "php", label: "PHP" }
+        { value: "php", label: "PHP" },
+        { value: "deno", label: "Deno"},
+        { value: "hono", label: "Hono"},
+        { value: "solidjs", label: "SolidJS"},
     ];
 
     const projects = [
@@ -84,6 +88,16 @@ const Projects = () => {
             demo: "https://imesc.ma.gov.br/",
             github: "",
             category: ["html", "css", "javascript", "wordpress", "php"]
+        },
+        {
+            id: 7,
+            title: "Paguu",
+            description: "Plataforma de gerenciamento de pedidos, comandas, pagamentos e estoque para bares e restaurantes.",
+            image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&fit=crop&q=60",
+            techs: ["Deno", "TypeScript", "Hono", "SolidJS"],
+            demo: "https://beamish-lily-08b300.netlify.app/",
+            github: "",
+            category: ["deno", "typescript", "hono", "solidjs"]
         }
     ]
 
