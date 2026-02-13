@@ -49,47 +49,57 @@ public/
 ## 📄 Estrutura de Componentes
 
 ### Header
+
 - Navegação com links para as seções do site.
 - Menu responsivo para dispositivos móveis.
 
 ### Hero
+
 - Apresentação com título, descrição e botões de ação.
 
 ### About
+
 - Seção "Sobre Mim" com informações pessoais e habilidades.
 
 ### Projects
+
 - Lista de projetos com imagens, descrições, tecnologias utilizadas e links para demonstrações ou repositórios.
 
 ### Contact
+
 - Formulário de contato com validação e envio de mensagens.
 - Informações de contato adicionais.
 
 ### Footer
+
 - Informações de copyright e link para voltar ao topo.
 
 ## 📦 Como Executar o Projeto
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/luisvictorbelo/portfolio.git
-   cd portfolio
-   ```
+
+    ```bash
+    git clone https://github.com/luisvictorbelo/portfolio.git
+    cd portfolio
+    ```
 
 2. Instale as dependências:
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
 
 3. Configure as variáveis de ambiente no arquivo `.env.local`:
-   ```
-   RESEND_API_KEY=your_resend_api_key
-   ```
+
+    ```
+    RESEND_API_KEY=your_resend_api_key
+    ```
 
 4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
+
+    ```bash
+    npm run dev
+    ```
 
 5. Acesse o projeto em [http://localhost:3000](http://localhost:3000).
 
@@ -105,6 +115,4 @@ Você pode acessar a versão online do portfólio [aqui](https://portfolio-phi-f
 
 ---
 
-Desenvolvido com 💜 por Luís Victor Belo.
-
-
+Desenvolvido por Luís Victor Belo.
