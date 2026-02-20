@@ -202,20 +202,20 @@
 
 @layer components {
     .section-title {
-        @apply text-3xl md:text-4xl font-bold mb-6 text-foreground relative inline-block;
+        @apply text-foreground relative mb-6 inline-block text-3xl font-bold md:text-4xl;
     }
 
     .section-title::after {
         content: '';
-        @apply absolute -bottom-2 left-0 w-1/2 h-1 bg-purple-400 rounded-full;
+        @apply absolute -bottom-2 left-0 h-1 w-1/2 rounded-full bg-purple-400;
     }
 
     .card-hover {
-        @apply transition-all duration-300 hover:shadow-lg hover:shadow-purple-200/20 dark:hover:shadow-purple-500/10 hover:-translate-y-1;
+        @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-200/20 dark:hover:shadow-purple-500/10;
     }
 
     .text-gradient {
-        @apply bg-clip-text text-transparent bg-purple-gradient;
+        @apply bg-purple-gradient bg-clip-text text-transparent;
     }
 }
 
