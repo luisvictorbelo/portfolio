@@ -29,46 +29,46 @@ const SkillsSection = () => {
     const skills = [
         {
             name: 'Node.js',
-            icon: <FaNodeJs className="text-green-600 w-8 h-8" />,
+            icon: <FaNodeJs className="h-8 w-8 text-green-600" />,
         },
-        { name: 'React', icon: <FaReact className="text-blue-400 w-8 h-8" /> },
+        { name: 'React', icon: <FaReact className="h-8 w-8 text-blue-400" /> },
         {
             name: 'Next.js',
-            icon: <RiNextjsFill className="dark:text-white w-8 h-8" />,
+            icon: <RiNextjsFill className="h-8 w-8 dark:text-white" />,
         },
         {
             name: 'NestJS',
-            icon: <SiNestjs className="text-pink-700 w-8 h-8" />,
+            icon: <SiNestjs className="h-8 w-8 text-pink-700" />,
         },
         {
             name: 'TypeScript',
-            icon: <SiTypescript className="text-blue-600 w-8 h-8" />,
+            icon: <SiTypescript className="h-8 w-8 text-blue-600" />,
         },
         {
             name: 'Tailwind',
-            icon: <SiTailwindcss className="text-green-500 w-8 h-8" />,
+            icon: <SiTailwindcss className="h-8 w-8 text-green-500" />,
         },
         {
             name: '.NET',
-            icon: <SiDotnet className="text-purple-700 w-8 h-8" />,
+            icon: <SiDotnet className="h-8 w-8 text-purple-700" />,
         },
         {
             name: 'WordPress',
-            icon: <FaWordpress className="dark:text-white w-8 h-8" />,
+            icon: <FaWordpress className="h-8 w-8 dark:text-white" />,
         },
         {
             name: 'PostgreSQL',
-            icon: <DiPostgresql className="text-blue-600 w-8 h-8" />,
+            icon: <DiPostgresql className="h-8 w-8 text-blue-600" />,
         },
         {
             name: 'MongoDB',
-            icon: <DiMongodb className="text-green-700 w-8 h-8" />,
+            icon: <DiMongodb className="h-8 w-8 text-green-700" />,
         },
-        { name: 'Azure', icon: <VscAzure className="text-blue-600 w-8 h-8" /> },
-        { name: 'Go', icon: <DiGo className="text-blue-400 w-8 h-8" /> },
+        { name: 'Azure', icon: <VscAzure className="h-8 w-8 text-blue-600" /> },
+        { name: 'Go', icon: <DiGo className="h-8 w-8 text-blue-400" /> },
         {
             name: 'Python',
-            icon: <DiPython className="text-yellow-400 w-8 h-8" />,
+            icon: <DiPython className="h-8 w-8 text-yellow-400" />,
         },
     ];
 
@@ -79,7 +79,7 @@ const SkillsSection = () => {
         >
             <div className="container mx-auto px-4">
                 <h2 className="section-title mb-12 text-center">Habilidades</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
                     {skills.map((skill, index) => (
                         <Skill
                             key={index}

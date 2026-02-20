@@ -22,8 +22,8 @@ const ThemeToggle = () => {
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className={
                 theme === 'dark'
-                    ? 'rounded-full w-9 h-9 bg-white'
-                    : 'rounded-full w-9 h-9 bg-purple-700'
+                    ? 'h-9 w-9 rounded-full bg-white'
+                    : 'h-9 w-9 rounded-full bg-purple-700'
             }
             aria-label="Altenar tema"
         >

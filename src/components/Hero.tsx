@@ -7,25 +7,25 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="min-h-screen flex items-center justify-center relative bg-linear-to-br from-white to-purple-50 dark:from-purple-900 dark:to-purple-800/20 pt-16"
+            className="relative flex min-h-screen items-center justify-center bg-linear-to-br from-white to-purple-50 pt-16 dark:from-purple-900 dark:to-purple-800/20"
         >
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-20 left-10 w-64 h-64 bg-purple-200 dark:bg-purple-700/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
-                <div className="absolute bottom-20 right-10 w-72 h-72 bg-purple-300 dark:bg-purple-600/20 rounded-full filter blur-3xl opacity-50 animate-pulse-slow"></div>
+                <div className="animate-pulse-slow absolute top-20 left-10 h-64 w-64 rounded-full bg-purple-200 opacity-50 blur-3xl filter dark:bg-purple-700/20"></div>
+                <div className="animate-pulse-slow absolute right-10 bottom-20 h-72 w-72 rounded-full bg-purple-300 opacity-50 blur-3xl filter dark:bg-purple-600/20"></div>
             </div>
-            <div className="container mx-auto px-4 z-10 flex flex-col md:flex-row items-center justify-between gap-10">
-                <div className="md:w-1/2 text-center md:text-left">
-                    <p className="text-lg md:text-xl font-medium text-purple-600 dark:text-purple-300 mb-2 animate-fade-in">
+            <div className="z-10 container mx-auto flex flex-col items-center justify-between gap-10 px-4 md:flex-row">
+                <div className="text-center md:w-1/2 md:text-left">
+                    <p className="animate-fade-in mb-2 text-lg font-medium text-purple-600 md:text-xl dark:text-purple-300">
                         Olá, eu sou
                     </p>
                     <h1
-                        className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in"
+                        className="animate-fade-in mb-4 text-4xl font-bold md:text-6xl"
                         style={{ animationDelay: '0.2s' }}
                     >
                         <span className="text-gradient">Luís Belo</span>
                     </h1>
                     <h2
-                        className="text-2xl md:text-3xl font-medium mb-6 text-foreground animate-fade-in"
+                        className="text-foreground animate-fade-in mb-6 text-2xl font-medium md:text-3xl"
                         style={{ animationDelay: '0.3s' }}
                     >
                         Desenvolvedor Full-Stack
@@ -67,24 +67,24 @@ const Hero = () => {
                     </div>
                 </div>
                 <div
-                    className="md:w-1/2 flex justify-center mt-8 md:mt-0 animate-fade-in"
+                    className="animate-fade-in mt-8 flex justify-center md:mt-0 md:w-1/2"
                     style={{ animationDelay: '0.6s' }}
                 >
-                    <div className="relative animate-float">
-                        <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-purple-700 shadow-xl">
+                    <div className="animate-float relative">
+                        <div className="h-64 w-64 overflow-hidden rounded-full border-4 border-white shadow-xl sm:h-80 sm:w-80 dark:border-purple-700">
                             <Image
                                 src={myPhoto}
                                 alt="Luís Victor Belo"
-                                className="w-full h-full object-cover"
+                                className="h-full w-full object-cover"
                             />
                         </div>
                     </div>
                 </div>
                 <a
                     href="#about"
-                    className="hidden md:block md:absolute md:bottom-10 md:left-1/2 md:transform md:-translate-x-1/2 md:animate-bounce-light"
+                    className="md:animate-bounce-light hidden md:absolute md:bottom-10 md:left-1/2 md:block md:-translate-x-1/2 md:transform"
                 >
-                    <ArrowDown className="w-10 h-10 p-2 rounded-full bg-purple-100 dark:bg-purple-800/50 text-purple-600 dark:text-purple-300" />
+                    <ArrowDown className="h-10 w-10 rounded-full bg-purple-100 p-2 text-purple-600 dark:bg-purple-800/50 dark:text-purple-300" />
                 </a>
             </div>
         </section>
